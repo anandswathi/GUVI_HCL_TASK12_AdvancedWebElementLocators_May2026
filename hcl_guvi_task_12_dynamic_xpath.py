@@ -81,7 +81,6 @@ def generate_rel_xpath_and_find_element(driver, navbar_el_name, relation, **kwar
     if 'href' in kwargs and kwargs["href"] == True:
         xpath_str = xpath_str_with_href
     elif "all" in relation:
-        # xpath_str = navbar_el_xpath_str
         xpath_str = navbar_el_xpath_dict[navbar_el_name]
     else:
         xpath_str = navbar_el_xpath_dict[navbar_el_name]
